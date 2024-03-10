@@ -39,8 +39,8 @@ docker run -ti --gpus all --name cont_train_reccomendation image_train_reccomend
 ```
 ### 4. Training and validation logs:
 ```
-#### 4.1. Recommendation model NCF train logs: "/app/train_eval.log"
-#### 4.2. Regression train logs: "/regression/regression.log"
+4.1. Recommendation model NCF train logs dir: "/app/train_eval.log"
+4.2. Regression train logs dir: "/regression/regression.log"
 ```
 
 ### 5. References and project details :
