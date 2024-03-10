@@ -1,0 +1,40 @@
+2024-03-09 18:28:57,083 
+
+2024-03-09 18:28:57,084 
+####################RUNNING THE REGRESSION SCRIPT####################
+
+2024-03-09 18:28:57,084 ####################SHAPE OF THE INPUT DATA####################
+2024-03-09 18:28:57,084 Total number of rows and columns in the initial dataset is : 541909 and 8 respectively
+
+
+2024-03-09 18:28:57,084 ####################STATISTICS OF THE INPUT DATA####################
+2024-03-09 18:28:57,173 Statistics of the numerical variables is :
+               count          mean          std       min       25%       50%       75%      max
+Quantity    541909.0      9.552250   218.081158 -80995.00      1.00      3.00     10.00  80995.0
+UnitPrice   541909.0      4.611114    96.759853 -11062.06      1.25      2.08      4.13  38970.0
+CustomerID  406829.0  15287.690570  1713.600303  12346.00  13953.00  15152.00  16791.00  18287.0
+
+
+2024-03-09 18:28:57,509 Statistics of the categorical variables is :
+              count unique                                 top    freq
+InvoiceNo    541909  25900                              573585    1114
+StockCode    541909   4070                              85123A    2313
+Description  540455   4223  WHITE HANGING HEART T-LIGHT HOLDER    2369
+InvoiceDate  541909  23260                    10/31/2011 14:41    1114
+Country      541909     38                      United Kingdom  495478
+
+
+2024-03-09 18:28:58,548 ####################DATA AFTER CLEANING####################
+2024-03-09 18:28:58,548 Total number of rows and columns in the initial dataset is : 391150 and 8 respectively, after dropping 27.819984536149057% of the rows
+
+
+2024-03-09 18:28:58,570 The total unique items are 3659 and unique customers are 4334
+
+
+2024-03-09 18:33:37,990 Mean Squared Error of XG_Boost on test data: 5.131880780351154
+
+2024-03-09 18:33:37,990 Root Mean Squared Error of XG_Boost on test data: 2.2653654849386125
+
+2024-03-09 18:34:21,319 Mean Squared Error of NN on test data: 4.555090427398682
+
+2024-03-09 18:34:21,320 Root Mean Squared Error of NN on test data: 2.134265781808508

@@ -34,4 +34,4 @@ CMD ["/run.sh"]
 
 # docker build --build-arg MODE="regression" -t test5 .
 # docker run -ti --gpus all --name test5 -p 8000:8000 test5
-# docker run -ti --name test5 -p 8000:8000 test5
+# docker run -ti --name test5 test5

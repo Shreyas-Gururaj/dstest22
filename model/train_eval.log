@@ -1,0 +1,85 @@
+2024-03-08 02:01:31,234 ####################SHAPE OF THE INPUT DATA####################
+2024-03-08 02:01:31,234 Total number of rows and columns in the initial dataset is : 541909 and 8 respectively
+
+
+2024-03-08 02:01:31,234 ####################STATISTICS OF THE INPUT DATA####################
+2024-03-08 02:01:31,305 Statistics of the numerical variables is :
+               count          mean          std       min       25%       50%       75%      max
+Quantity    541909.0      9.552250   218.081158 -80995.00      1.00      3.00     10.00  80995.0
+UnitPrice   541909.0      4.611114    96.759853 -11062.06      1.25      2.08      4.13  38970.0
+CustomerID  406829.0  15287.690570  1713.600303  12346.00  13953.00  15152.00  16791.00  18287.0
+
+
+2024-03-08 02:01:31,621 Statistics of the categorical variables is :
+              count unique                                 top    freq
+InvoiceNo    541909  25900                              573585    1114
+StockCode    541909   4070                              85123A    2313
+Description  540455   4223  WHITE HANGING HEART T-LIGHT HOLDER    2369
+InvoiceDate  541909  23260                    10/31/2011 14:41    1114
+Country      541909     38                      United Kingdom  495478
+
+
+2024-03-08 02:01:32,365 ####################DATA AFTER CLEANING####################
+2024-03-08 02:01:32,365 Total number of rows and columns in the initial dataset is : 399656 and 8 respectively, after dropping 26.250348305711846% of the rows
+
+
+2024-03-08 02:01:32,370 The total unique items are 3676 and unique customers are 4362
+
+
+2024-03-08 02:01:32,873 ####################TRAINING THE MODEL####################
+2024-03-08 02:01:32,873 TRAINING SUCCESSFULLY STARTED
+
+
+2024-03-08 02:01:33,067 GPU available: True (cuda), used: True
+2024-03-08 02:01:33,083 TPU available: False, using: 0 TPU cores
+2024-03-08 02:01:33,083 IPU available: False, using: 0 IPUs
+2024-03-08 02:01:33,083 HPU available: False, using: 0 HPUs
+2024-03-08 02:01:33,744 You are using a CUDA device ('NVIDIA GeForce RTX 3060') that has Tensor Cores. To properly utilize them, you should set `torch.set_float32_matmul_precision('medium' | 'high')` which will trade-off precision for performance. For more details, read https://pytorch.org/docs/stable/generated/torch.set_float32_matmul_precision.html#torch.set_float32_matmul_precision
+2024-03-08 02:01:37,568 ####################SHAPE OF THE INPUT DATA####################
+2024-03-08 02:01:37,568 Total number of rows and columns in the initial dataset is : 541909 and 8 respectively
+
+
+2024-03-08 02:01:37,568 ####################STATISTICS OF THE INPUT DATA####################
+2024-03-08 02:01:37,641 Statistics of the numerical variables is :
+               count          mean          std       min       25%       50%       75%      max
+Quantity    541909.0      9.552250   218.081158 -80995.00      1.00      3.00     10.00  80995.0
+UnitPrice   541909.0      4.611114    96.759853 -11062.06      1.25      2.08      4.13  38970.0
+CustomerID  406829.0  15287.690570  1713.600303  12346.00  13953.00  15152.00  16791.00  18287.0
+
+
+2024-03-08 02:01:37,965 Statistics of the categorical variables is :
+              count unique                                 top    freq
+InvoiceNo    541909  25900                              573585    1114
+StockCode    541909   4070                              85123A    2313
+Description  540455   4223  WHITE HANGING HEART T-LIGHT HOLDER    2369
+InvoiceDate  541909  23260                    10/31/2011 14:41    1114
+Country      541909     38                      United Kingdom  495478
+
+
+2024-03-08 02:01:38,719 ####################DATA AFTER CLEANING####################
+2024-03-08 02:01:38,719 Total number of rows and columns in the initial dataset is : 399656 and 8 respectively, after dropping 26.250348305711846% of the rows
+
+
+2024-03-08 02:01:38,724 The total unique items are 3676 and unique customers are 4362
+
+
+2024-03-08 02:01:39,218 ####################TRAINING THE MODEL####################
+2024-03-08 02:01:39,218 TRAINING SUCCESSFULLY STARTED
+
+
+2024-03-08 02:01:40,042 ----------------------------------------------------------------------------------------------------
+distributed_backend=nccl
+All distributed processes registered. Starting with 2 processes
+----------------------------------------------------------------------------------------------------
+
+2024-03-08 05:39:46,469 `Trainer.fit` stopped: `max_epochs=100` reached.
+2024-03-08 05:39:46,552 TRAINING SUCCESSFULLY FINISHED
+
+
+2024-03-08 05:39:46,607 TRAINING SUCCESSFULLY FINISHED
+
+
+2024-03-08 05:40:24,567 ####################EVALUATION RESULT HR@10####################
+2024-03-08 05:40:24,567 The Hit Ratio @ 10 is 0.68
+2024-03-08 05:40:27,371 ####################EVALUATION RESULT HR@10####################
+2024-03-08 05:40:27,371 The Hit Ratio @ 10 is 0.68
