@@ -37,7 +37,12 @@ cd dstest22/
 docker build --build-arg MODE="train_reccomendation" -t image_train_reccomendation .
 docker run -ti --gpus all --name cont_train_reccomendation image_train_reccomendation
 ```
-### 4. References and project details :
+### 4. Training and validation logs:
+
+#### 4.1. Recommendation model NCF train logs: "/app/train_eval.log"
+#### 4.2. Regression train logs: "/regression/regression.log"
+
+### 5. References and project details :
 - Specific details related to data pre-processing, feature engineering, train/test split, model architecture, evaluation metric, and answers to the questions related to business impact are captured in a separate document "dstest22/Task_specific_details.pdf"
 - Link to check the training loss curve for the NCF model used for the Recommendation task: "https://wandb.ai/shreyas1995/NeuralCF_Conrad?nw=nwusershreyas1995"
 - Neural Collaborative Filtering (NCF) paper: "https://arxiv.org/abs/1708.05031"
