@@ -22,7 +22,7 @@ docker run -ti --name cont_api -p 8000:8000 image_api
 }
 ```
 
-### 1.4. Check the response
+#### 1.4. Check the response
 
 ### 2. Regression module set up
 ```
