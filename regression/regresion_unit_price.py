@@ -119,7 +119,7 @@ def neural_network(x_train : Optional[Union[np.ndarray, pd.Series, pd.DataFrame]
         
         for epoch in range(num_epochs):
             model.train()
-            with tqdm(batch_size_nn, unit="batch", mininterval=0, disable=True) as bar:
+            with tqdm(batch_start, unit="batch", mininterval=0, disable=True) as bar:
                 bar.set_description(f"Epoch {epoch}")
                 for start in bar:
                     # take a batch
