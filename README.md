@@ -1,11 +1,11 @@
 # dstest22
 This project repository contains the scripts for training and evaluating two modules (i.e. Item bundle recommendation and "UnitPrice" prediction) for the given input eCommerce dataset. Each of the modules can be independently containerized and executed using the Docker File provided inside the  repository.
 
-### The below command is used to clone the repo
+### The below command is used to clone the repo :
 ```
 git clone https://github.com/Shreyas-Gururaj/dstest22.git
 ```
-### 1. FASTAPI-based Inference module set up
+### 1. FASTAPI-based Inference module set-up :
 ```
 cd dstest22/
 docker build --build-arg MODE="FASTAPI" -t image_api .
@@ -24,20 +24,20 @@ docker run -ti --name cont_api -p 8000:8000 image_api
 
 #### 1.4. Check the response
 
-### 2. Regression module set up
+### 2. Regression module set-up :
 ```
 cd dstest22/
 docker build --build-arg MODE="regression" -t image_train_regression .
 docker run -ti --name cont_train_regression image_train_regression
 ```
 
-### 3. Regression module set up
+### 3. NCF to train the model for recommendation module set-up :
 ```
 cd dstest22/
 docker build --build-arg MODE="train_reccomendation" -t image_train_reccomendation .
 docker run -ti --gpus all --name cont_train_reccomendation image_train_reccomendation
 ```
-### 4. References and project details
+### 4. References and project details :
 - Specific details related to data pre-processing, feature engineering, train/test split, model architecture, evaluation metric, and answers to the questions related to business impact are captured in a separate document "dstest22/Task_specific_details.pdf"
 - Link to check the training loss curve for the NCF model used for the Recommendation task: "https://wandb.ai/shreyas1995/NeuralCF_Conrad?nw=nwusershreyas1995"
 - Neural Collaborative Filtering (NCF) paper: "https://arxiv.org/abs/1708.05031"
