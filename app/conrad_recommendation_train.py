@@ -37,7 +37,7 @@ def parse_args():
     """PARAMETERS"""
     parser = argparse.ArgumentParser('training_recommendation')
     parser.add_argument('--accelerator', default='gpu', help='use cpu/gpu mode')
-    parser.add_argument('--epoch', default=1, type=int, help='number of epoch in training')
+    parser.add_argument('--epoch', default=100, type=int, help='number of epoch in training')
     return parser.parse_args()
 
 def eval(df : Optional[Union[np.ndarray, pd.Series, pd.DataFrame]], df_test : Optional[Union[np.ndarray, pd.Series, pd.DataFrame]], 
